@@ -16,7 +16,7 @@ class PixaBayRepositoryImpl extends PixaBayRepository {
   @override
   Future<DataState<PixaBayResponse>> getImagesList() async {
     try {
-      final httpResponse = await _apiService.getImages(key: pixabayAPIKey, query: 'yellow', imageType: 'photo');
+      final httpResponse = await _apiService.getImages(key: pixabayAPIKey, query: 'birds', imageType: 'photo');
 
       if (httpResponse.response.statusCode == HttpStatus.ok) {
         if (httpResponse.data.totalHits > 0) {

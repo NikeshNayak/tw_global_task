@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
         BlocProvider<GetPixabayImagesBloc>(create: (context) => sl()),
       ],
       child: MaterialApp(
-        title: 'HariPrabodham Mangalya',
+        title: 'TW Global Task',
         debugShowCheckedModeBanner: false,
         theme: theme(),
         onGenerateRoute: appRouter.onGenerateRoute,
